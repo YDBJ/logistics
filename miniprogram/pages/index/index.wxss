@@ -1,0 +1,28 @@
+/**index.wxss**/
+.userinfo {
+  position: relative;
+  padding-top: 30px;
+  width: 375px;
+  height: 282px;
+  background-color: #4e148c;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  font-family: Arial;
+}
+.userinfo .image {
+  left: 11px;
+  top: 129px;
+  width: 354px;
+  height: 156px;
+  border-radius: 6px;
+}
+.userinfo .fillet {
+  width: 386px;
+  height: 216px;
+  line-height: 20px;
+  background-color: #4e148c;
+  color: #101010;
+  font-size: 14px;
+  font-family: Arial;
+}

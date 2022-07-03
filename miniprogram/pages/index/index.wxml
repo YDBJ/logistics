@@ -1,0 +1,75 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="userinfo">
+    <!-- 轮播图 开始 -->
+    <view>
+      <swiper class="swiper" interval="1800" autoplay indicator-dots circular indicator-color="#aeaeae" indicator-active-color="#4097dd">
+        <swiper-item>
+          <navigator>
+            <image class="image" mode="widthFix" src="../../img/1.jpg"></image>
+          </navigator>
+        </swiper-item>
+        <swiper-item>
+          <navigator>
+            <image class="image" mode="widthFix" src="../../img/2.png"></image>
+          </navigator>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 轮播图 结束 -->
+    <view class="fillet"></view>
+    <view class="goinss">
+      <view class="goInText">
+        <text>中国</text>
+        <image mode="widthFix" src="../../icons/play.png"></image>
+        <text>美国</text>
+      </view>
+      <view class="goInButton">
+        <button class='btn'>
+          <view>立即转运</view>
+        </button>
+      </view>
+    </view>
+    <view class="rectangle">
+      <image class="Manual" mode="widthFix" src="../../icons/Manual.png"></image>
+      <view class="rectangleText">
+        <view>联系好物</view>
+        <text class="text">为您解决下单疑问？</text>
+      </view>
+      <view>
+        <image class="righticon" mode="widthFix" src="../../icons/right.png"></image>
+      </view>
+    </view>
+
+    <view class="matters">
+      <view class="left">
+        <view>转运须知</view>
+        <text>流程和注意事项</text>
+        <view class="leftRound">
+          <image class="righticon" mode="widthFix" src="../../icons/right.png"></image>
+        </view>
+        <image class="car" mode="widthFix" src="../../icons/car.png"></image>
+      </view>
+      <view class="right">
+        <view>运费估算</view>
+        <text>费用心中有数</text>
+        <view class="leftRound">
+          <image class="righticon" mode="widthFix" src="../../icons/right.png"></image>
+        </view>
+        <image class="computer" mode="widthFix" src="../../icons/computer.png"></image>
+      </view>
+    </view>
+
+    <view class="easy">轻松转运</view>
+    <view class="flowpath">
+      <image class="flowpath" mode="widthFix" src="../../icons/flowpath.png"></image>
+    </view>
+    <view class="copyaddress">
+      <button class='btn'>
+        <image class='copy' src='../../icons/copy.png'></image>
+        <view>复制仓库地址去购物</view>
+      </button>
+    </view>
+    <view class="gainaddress">电商平台的收获地址请填写我们</view>
+  </view>
+</view>
