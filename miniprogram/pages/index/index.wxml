@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="index">
+<view>
   <view class="userinfo">
     <!-- 轮播图 开始 -->
     <view>
@@ -17,20 +17,39 @@
       </swiper>
     </view>
     <!-- 轮播图 结束 -->
+    <!-- 立即转运 开始 -->
     <view class="fillet"></view>
     <view class="goinss">
       <view class="goInText">
         <text>中国</text>
         <image mode="widthFix" src="../../icons/play.png"></image>
-        <text>美国</text>
+        <text bindtap="selectCountry">美国</text>
       </view>
       <view class="goInButton">
-        <button class='btn'>
+        <button class='btn' bindtap="handletap">
           <view>立即转运</view>
         </button>
       </view>
+      <view hidden='{{showModal}}' class="popUp">
+        <view class='modal_box'>
+          <view class="title">预选渠道</view>
+          <view class='content'>
+            <text bindtap="handleItemTap" data-index="{{index}}" class="modalMsg {{index===currentIndex?'purple':''}}" wx:for="{{leftMenuList}}" wx:key="id">
+              {{item.name}}
+            </text>
+          </view>
+          <view class='btn'>
+            <view bindtap='cancel' class='cancel'>取消</view>
+            <view>
+              <navigator bindtap='cancel' url="../writeaddress/index" class='Sure'>下一步</navigator>
+            </view>
+          </view>
+        </view>
+      </view>
     </view>
-    <view class="rectangle">
+    <!-- 立即转运 结束 -->
+    <!-- 联系好物 开始 -->
+    <view class="rectangle" bindtap="manual">
       <image class="Manual" mode="widthFix" src="../../icons/Manual.png"></image>
       <view class="rectangleText">
         <view>联系好物</view>
@@ -40,13 +59,14 @@
         <image class="righticon" mode="widthFix" src="../../icons/right.png"></image>
       </view>
     </view>
-
+    <!-- 联系好物 结束 -->
+    <!-- 须知与估算 开始 -->
     <view class="matters">
       <view class="left">
         <view>转运须知</view>
         <text>流程和注意事项</text>
         <view class="leftRound">
-          <image class="righticon" mode="widthFix" src="../../icons/right.png"></image>
+          <image bindtap="caricon" class="righticon" mode="widthFix" src="../../icons/right.png"></image>
         </view>
         <image class="car" mode="widthFix" src="../../icons/car.png"></image>
       </view>
@@ -54,22 +74,23 @@
         <view>运费估算</view>
         <text>费用心中有数</text>
         <view class="leftRound">
-          <image class="righticon" mode="widthFix" src="../../icons/right.png"></image>
+          <image bindtap="computericon" class="righticon" mode="widthFix" src="../../icons/right.png"></image>
         </view>
         <image class="computer" mode="widthFix" src="../../icons/computer.png"></image>
       </view>
     </view>
-
+    <!-- 须知与估算 结束 -->
+    <!-- 结尾 -->
     <view class="easy">轻松转运</view>
     <view class="flowpath">
       <image class="flowpath" mode="widthFix" src="../../icons/flowpath.png"></image>
     </view>
-    <view class="copyaddress">
-      <button class='btn'>
+    <navigator class="copyaddress" url="../warehouse/index">
+      <view class='btn'>
         <image class='copy' src='../../icons/copy.png'></image>
         <view>复制仓库地址去购物</view>
-      </button>
-    </view>
-    <view class="gainaddress">电商平台的收获地址请填写我们</view>
+      </view>
+    </navigator>
+    <view bindtap="gainaddress" class="gainaddress">电商平台的收获地址请填写我们</view>
   </view>
 </view>

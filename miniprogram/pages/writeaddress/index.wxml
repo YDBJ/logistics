@@ -1,0 +1,56 @@
+<view>
+  <view class="index">
+    <!-- 仓库地址 开始 -->
+    <view data-text="{{orderNumber}}" bindtap="copywxtap" class="warehouse">
+      <view class="addressicon">
+        <image class="position" mode="widthFix" src="../../icons/position.png"></image>
+      </view>
+      <view class="address">仓库地址</view>
+      <view class="addressee">
+        <view class="title">好物仓库</view>
+        <view class="phone">18688880130</view>
+        <view class="copy">复制</view>
+      </view>
+      <view class="Harvest">
+        深圳市龙华区龙华街道工业路壹城环智中心C座2607室
+      </view>
+    </view>
+    <!-- 仓库地址 结束 -->
+    <!-- 目的地 开始 -->
+    <view class="destination">
+      <view class="destinationInfo">目标国收件信息</view>
+      <view class="warn">
+        <image mode="widthFix" src="../../icons/warn.png"></image>
+        <view class="English">请用英文填写</view>
+        <view class="selectaddress" bindtap="selectaddress">选择地址</view>
+      </view>
+      <view class="Info">
+        <view class="Namebox">
+          <text>Name：</text>
+          <input class="Name" placeholder="Please fill in the recipient‘s name" />
+        </view>
+        <view class="Namebox">
+          <text>Phone：</text>
+          <input class="Name" placeholder="Please fill in the recipient‘s phone" />
+        </view>
+        <view class="Namebox">
+          <text>Address：</text>
+          <input class="Name" placeholder="Please fill in the address" />
+        </view>
+        <view class="Namebox">
+          <text>City：</text>
+          <input class="Name" placeholder="Please fill in the city" />
+        </view>
+        <label class="Namebox">
+          <text>PostCode：</text>
+          <input class="Name" placeholder="Please fill in the postcode" />
+        </label>
+
+      </view>
+    </view>
+    <!-- 目的地 结束 -->
+    <button class='transport'>
+      <view>立即转运</view>
+    </button>
+  </view>
+</view>

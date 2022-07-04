@@ -1,0 +1,29 @@
+<view>
+  <view class="index">
+    <!-- 仓库地址 开始 -->
+    <view data-text="{{record}}" bindtap="copywxtap" class="warehouse">
+      <view class="addressicon">
+        <image class="position" mode="widthFix" src="../../icons/position.png"></image>
+      </view>
+      <view class="address">仓库地址</view>
+      <!-- <view class="addressee">收件人：好物仓库</view> -->
+      <view class="addressee">{{fixedAddressee}}</view>
+      <view class="Harvest">
+        <!-- <view class="Harvestson">深圳市龙华区龙华街道工业路壹城环智中心C座2607室</view> -->
+        <view class="Harvestson">{{fixedHarvest}}</view>
+      </view>
+      <!-- <view class="phone">联系电话：18688880130</view> -->
+      <view class="phone">{{fixedPhone}}</view>
+      <!-- <view class="mail">邮政编码：518000</view> -->
+      <view class="mail">{{fixedMail}}</view>
+      <!-- 仓库地址 结束 -->
+      <button class='btn'>
+        <view>一键复制仓库地址信息</view>
+      </button>
+    </view>
+
+    <view class="procedurebox">
+      <image class='procedure' src='../../icons/procedure.png'></image>
+    </view>
+  </view>
+</view>

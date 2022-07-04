@@ -74,9 +74,78 @@
         background-color: #4e148c;
         color: white;
         border-radius: 6px;
-        line-height: 24px;
+        line-height: 40px;
         font-size: 14px;
         font-weight: 400;
+      }
+    }
+
+    .popUp {
+      position: absolute;
+      left: 1px;
+      top: -34px;
+      width: 310px;
+      height: 292px;
+      z-index: 1;
+      line-height: 20px;
+      border-radius: 4px 4px 4px 4px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 100);
+
+      .modal_box {
+        color: black;
+
+        .title {
+          padding-top: 17px;
+          color: rgba(0, 0, 0, 1);
+          font-size: 18px;
+          text-align: center;
+          font-family: PingFangSC-regular;
+        }
+
+        .content {
+          color: #4c168e;
+          font-size: 15px;
+
+          .modalMsg {
+            display: inline-block;
+            width: 114px;
+            height: 48px;
+            border: 1px solid rgba(187, 187, 187, 100);
+            border-radius: 7px;
+            line-height: 17px;
+            margin: 14px 14px 0 14px;
+            font-weight: bold;
+          }
+          .modalMsg:nth-child(5){
+            float: left;
+            margin-left: 24px;
+          }
+
+          .purple {
+            background-color: rgba(76, 22, 142, 100);
+            color: #fff;
+            font-weight: 600;
+          }
+        }
+
+        .btn {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          line-height: 36px;
+          font-size: 18px;
+
+          view {
+            display: inline-block;
+            margin: 0 50px 6px 50px;
+          }
+
+          .Sure {
+            color: rgba(2, 187, 0, 100);
+          }
+
+        }
       }
     }
   }
@@ -265,12 +334,14 @@
     font-family: Microsoft Yahei;
 
     .btn {
-      width: 162px;
+      position: absolute;
+      left: 80px;
+      width: 180px;
       height: 38px;
       background-color: #4e148c;
       color: white;
       border-radius: 6px;
-      line-height: 24px;
+      line-height: 40px;
       font-size: 14px;
       font-weight: 400;
 

@@ -1,2 +1,15 @@
-<!--pages/order/index.wxml-->
-<text>pages/order/index.wxml</text>
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  <view class="onlyone" wx:for="{{orders}}" wx:key="order_id">
+    <view class="orderNumber">订单号：{{item.order_number}} <text class="copy">复制</text></view>
+    <view class="goInText">
+      <text>{{item.start}}</text>
+      <image mode="widthFix" src="../../icons/list.png"></image>
+      <text bindtap="selectCountry">{{item.end}}</text>
+    </view>
+    <text class="status">{{item.status}}</text>
+    <view class="btn">
+      <view wx:if="{{item.variable.state === 0}}" class="affirm">{{item.variable.affirm}}</view>
+      <view class="details">{{item.details}}</view>
+    </view>
+  </view>
+</Tabs>
