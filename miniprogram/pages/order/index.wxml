@@ -6,9 +6,11 @@
       <image mode="widthFix" src="../../icons/list.png"></image>
       <text bindtap="selectCountry">{{item.end}}</text>
     </view>
-    <text class="status">{{item.status}}</text>
     <view class="btn">
-      <view wx:if="{{item.variable.state === 0}}" class="affirm">{{item.variable.affirm}}</view>
+      <view wx:if="{{item.variable.state === 0}}" class="affirm">{{item.variable.affirm}}<text class="status">{{item.variable.status}}</text></view>
+      <view wx:if="{{item.variable.state === 1}}" class="affirm">{{item.variable.affirm}}<text class="status">{{item.variable.status}}</text></view>
+      <view wx:if="{{item.variable.state === 2}}" class="affirm">{{item.variable.affirm}}<text class="status">{{item.variable.status}}</text></view>
+      <view wx:if="{{item.variable.state === 3}}" class="affirm">{{item.variable.affirm}}<text class="status">{{item.variable.status}}</text></view>
       <view class="details">{{item.details}}</view>
     </view>
   </view>

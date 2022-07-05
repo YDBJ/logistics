@@ -23,7 +23,9 @@
       <view class="goInText">
         <text>中国</text>
         <image mode="widthFix" src="../../icons/play.png"></image>
-        <text bindtap="selectCountry">美国</text>
+        <navigator url="../country/index">
+          <text>美国</text>
+        </navigator>
       </view>
       <view class="goInButton">
         <button class='btn' bindtap="handletap">

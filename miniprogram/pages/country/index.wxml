@@ -1,0 +1,18 @@
+<view class="search_input">
+  <!-- open-type="navigate" 跳转到非tabBar页面 -->
+  <view class="searchbox">
+    <image class='search' src='../../icons/search.png'></image>
+    <input value="{{inpValue}}" bindinput="handleInput" class="input" type="text" placeholder="选择国家或地区" />
+    <view class="line"></view>
+  </view>
+  <van-index-bar index-list="{{ indexList }}" scroll-top="{{ scrollTop }}">
+    <van-index-anchor wx:if="{{!filter}}" wx:for="{{customerList}}" wx:key="index" index="{{item.firstLetter}}" use-slot="{{true}}">
+      {{item.firstLetter}}
+      <van-cell wx:for="{{item.list}}" wx:key="index" data-id="{{item.code}}" data-name="{{item.name}}" title="{{item.name}}" bindtap="getCustomer" />
+    </van-index-anchor>
+    <view class="filter" wx-if="{{filter}}">
+      <!-- <van-cell class="text" wx:for="{{filterData}}" wx:key="index">{{item.name}}</van-cell> -->
+      <van-cell wx:for="{{filterData}}" wx:key="index" data-id="{{item.code}}" data-name="{{item.name}}" title="{{item.name}}" bindtap="getCustomer" />
+    </view>
+  </van-index-bar>
+</view>

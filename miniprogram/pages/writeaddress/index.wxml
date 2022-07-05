@@ -25,32 +25,19 @@
         <view class="selectaddress" bindtap="selectaddress">选择地址</view>
       </view>
       <view class="Info">
-        <view class="Namebox">
-          <text>Name：</text>
-          <input class="Name" placeholder="Please fill in the recipient‘s name" />
+        <view class="Namebox" wx:for="{{title}}" wx:key="index">
+          <text>{{item.title}}</text>
+          <input type="text" class="Name" placeholder="{{item.hint}}" data-index="{{index}}" bindblur="_bindblur" />
+          <block wx:if="{{item.isshow}}">
+            <text class="hint" wx:if="{{item.ishint}}">格式输入错误</text>
+            <text class="hint right" wx:else>正确</text>
+          </block>
         </view>
-        <view class="Namebox">
-          <text>Phone：</text>
-          <input class="Name" placeholder="Please fill in the recipient‘s phone" />
-        </view>
-        <view class="Namebox">
-          <text>Address：</text>
-          <input class="Name" placeholder="Please fill in the address" />
-        </view>
-        <view class="Namebox">
-          <text>City：</text>
-          <input class="Name" placeholder="Please fill in the city" />
-        </view>
-        <label class="Namebox">
-          <text>PostCode：</text>
-          <input class="Name" placeholder="Please fill in the postcode" />
-        </label>
-
       </view>
     </view>
     <!-- 目的地 结束 -->
-    <button class='transport'>
+    <navigator url="../notice/index" class='transport'>
       <view>立即转运</view>
-    </button>
+    </navigator>
   </view>
 </view>

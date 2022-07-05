@@ -1,0 +1,8 @@
+<view>
+  <view></view>
+  <navigator class="copyaddress" url="">
+    <view class='btn'>
+      <view>我已知悉</view>
+    </view>
+  </navigator>
+</view>

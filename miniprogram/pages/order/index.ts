@@ -25,11 +25,12 @@ Page({
       value: "已完成",
       isActive: false
     }],
+    showState: 0, // all
     orders: [
       { order_number: "20220509140712345678", start: "中国", end: "美国", variable: { status: "待入仓", affirm: "确认打包", state: 0 }, details: '详情' },
-      { order_number: "20220509140712345678", start: "中国", end: "美国", variable: { status: "待入仓", affirm: "确认打包", state: 1 }, details: '详情' },
-      { order_number: "20220509140712345678", start: "中国", end: "美国", variable: { status: "待入仓", affirm: "去支付", state: 2 }, details: '详情' },
-      { order_number: "20220509140712345678", start: "中国", end: "美国", variable: { status: "待入仓", affirm: "物流详情", state: 3 }, details: '详情' }
+      { order_number: "20220509140712345678", start: "中国", end: "美国", variable: { status: "待填写", affirm: "不显示", state: 1 }, details: '详情' },
+      { order_number: "20220509140712345678", start: "中国", end: "美国", variable: { status: "待支付", affirm: "去支付", state: 2 }, details: '详情' },
+      { order_number: "20220509140712345678", start: "中国", end: "美国", variable: { status: "已出仓", affirm: "物流详情", state: 3 }, details: '详情' }
     ],
   },
 
@@ -42,8 +43,27 @@ Page({
       tabs
     } = this.data;
     tabs.forEach((v, i) => i === index ? v.isActive = true : v.isActive = false);
+    this.data.showState = index
+
+    // 通过切换不同的订单状态status来筛选出不同订单列表
+    // 获取到状态为all的商品
+    let arr = []
+    for (let i in this.data.orders) {
+      arr.push(this.data.orders[i])
+    }
+
+    if (this.data.showState === 0) {
+      this.setData({
+        orders: arr
+      })
+    } else {
+      // 筛选出对应的状态的订单 过滤出
+      let res = this.data.orders.filter((item, index) => item.variable.state == this.data.showState);
+      console.log(res);
+    }
     this.setData({
-      tabs
+      tabs,
+      showState: index,
     })
   },
 
@@ -58,21 +78,19 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide() {
-
+    console.log("隐藏");
   },
 
   /**

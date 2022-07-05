@@ -7,7 +7,9 @@
     "pages/search/index",
     "pages/user/index",
     "pages/warehouse/index",
-    "pages/writeaddress/index"
+    "pages/writeaddress/index",
+    "pages/notice/index",
+    "pages/country/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

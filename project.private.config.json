@@ -34,6 +34,20 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "转运须知",
+          "pathName": "pages/notice/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "选择国家和地区",
+          "pathName": "pages/country/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
