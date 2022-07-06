@@ -1,0 +1,7 @@
+<view>
+  <view class="index">
+    <image class="hintaddress" src="../../icons/preferential1.png"></image>
+    <image class="hintaddress" src="../../icons/preferential2.png"></image>
+    <image class="hintaddress" src="../../icons/preferential3.png"></image>
+  </view>
+</view>

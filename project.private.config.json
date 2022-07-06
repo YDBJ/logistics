@@ -15,7 +15,7 @@
           "scene": null
         },
         {
-          "name": "添加地址",
+          "name": "填写地址",
           "pathName": "pages/writeaddress/index",
           "query": "",
           "launchMode": "default",
@@ -45,6 +45,69 @@
         {
           "name": "选择国家和地区",
           "pathName": "pages/country/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/user/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "我的地址",
+          "pathName": "pages/useraddress/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "添加地址",
+          "pathName": "pages/address/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "地址仓库",
+          "pathName": "pages/Storageaddress/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "活动中心",
+          "pathName": "pages/activeCenter/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "转运流程",
+          "pathName": "pages/TransferProcess/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "转运须知",
+          "pathName": "pages/TransferInstructions/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "优惠卷",
+          "pathName": "pages/Preferentials/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "订单详情",
+          "pathName": "pages/orderDetails/index",
           "query": "",
           "launchMode": "default",
           "scene": null

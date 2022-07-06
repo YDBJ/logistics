@@ -1,0 +1,20 @@
+<view class="index">
+  <view class="address">
+    <view class="meaddress">
+      <image mode="widthFix" src="../../icons/meaddress.png"></image>
+    </view>
+    <view class="message">
+      <view>
+        <text class="name">XXX</text>
+        <text>123***7890</text>
+      </view>
+      <text>MEGASYSTEMS INC 799 E DRAGRAM SUITE 5A
+        TUCSON, AZ 85705 USA</text>
+    </view>
+    <view class="DefaultAddress">
+      <van-checkbox checked-color="#ffa726" value="{{ checked }}" bind:change="onChange">默认寄件地址</van-checkbox>
+      <image class="edit" mode="widthFix" src="../../icons/edit.png"></image>
+      <image class="edit delete" mode="widthFix" src="../../icons/delete.png"></image>
+    </view>
+  </view>
+</view>

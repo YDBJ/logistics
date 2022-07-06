@@ -32,6 +32,7 @@ Page({
       { order_number: "20220509140712345678", start: "中国", end: "美国", variable: { status: "待支付", affirm: "去支付", state: 2 }, details: '详情' },
       { order_number: "20220509140712345678", start: "中国", end: "美国", variable: { status: "已出仓", affirm: "物流详情", state: 3 }, details: '详情' }
     ],
+    arrs: Array()
   },
 
   handleTabsItemChange(e: any) {
@@ -47,19 +48,16 @@ Page({
 
     // 通过切换不同的订单状态status来筛选出不同订单列表
     // 获取到状态为all的商品
-    let arr = []
-    for (let i in this.data.orders) {
-      arr.push(this.data.orders[i])
-    }
-
     if (this.data.showState === 0) {
       this.setData({
-        orders: arr
+        arrs: this.data.orders
       })
     } else {
       // 筛选出对应的状态的订单 过滤出
-      let res = this.data.orders.filter((item, index) => item.variable.state == this.data.showState);
-      console.log(res);
+      let data = this.data.orders.filter(v => v.variable.state == index)
+      this.setData({
+        arrs: data
+      })
     }
     this.setData({
       tabs,
@@ -78,6 +76,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
+    this.setData({
+      arrs: this.data.orders
+    })
   },
 
   /**

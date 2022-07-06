@@ -1,12 +1,11 @@
-// pages/user/index.ts
+// pages/orderDetails/index.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    avatarUrl: "https://thirdwx.qlogo.cn/mmopen/vi_32/2LJhGcBOS6ln7OVfWVsWZFBR4j6xZg19QSEuicw9RbqibnjF0XX8YK20QpricIVL11JqwIjUgcaYhCk4uKKsjoJRg/132",
-    nickName:"XXX"
+
   },
 
   /**

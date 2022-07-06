@@ -1,0 +1,11 @@
+<view>
+  <view>
+    <!-- 默认显示 -->
+    <image class="hintaddress" src="../../icons/hintaddress.png"></image>
+  </view>
+  <view class="goInaddress">
+    <button class='btn' bindtap="handletap">
+      <view>添加地址</view>
+    </button>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="index">
+  <view class="TransferProcessbox">
+    <!-- 默认显示 -->
+    <image class="TransferProcess" src="../../icons/TransferProcess.png"></image>
+  </view>
+  <navigator class="agree" url="">
+    <view class='btn'>
+      <view>已阅读</view>
+    </view>
+  </navigator>
+</view>

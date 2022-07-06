@@ -1,0 +1,27 @@
+<view class="index">
+  <view class="destination">
+    <view class="Info">
+      <view class="Namebox" wx:for="{{title}}" wx:key="index">
+        <text>{{item.title}}</text>
+        <input type="text" class="Name" placeholder="{{item.hint}}" data-index="{{index}}" bindblur="_bindblur" />
+        <block wx:if="{{item.isshow}}">
+          <text class="hint" wx:if="{{item.ishint}}">格式输入错误</text>
+          <text class="hint right" wx:else>正确</text>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class="Country" >
+    <van-cell wx:if="{{!show}}" title="Country：" bindtap="Country" is-link value="Please select a country" />
+    <van-popup wx:else show="{{ show }}" position="bottom" custom-style="height: 70%;" bind:close="onClose">
+      <van-area area-list="{{ areaList }}" columns-num="{{ 2 }}" title="Country" />
+    </van-popup>
+  </view>
+  <view class="switch">
+    <text>设为默认</text>
+    <van-switch class="derail" active-color="#07c160" checked="{{ checked }}" bind:change="onChange" />
+  </view>
+  <button class='btn' bindtap="handletap">
+    <view>添加地址</view>
+  </button>
+</view>

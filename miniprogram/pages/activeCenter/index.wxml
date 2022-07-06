@@ -1,0 +1,7 @@
+<view>
+  <view>
+    <!-- 默认显示 -->
+    <image class="hintaddress" src="../../icons/hintaddress.png"></image>
+    <view class="hint">亲，暂时没有活动哦！~</view>
+  </view>
+</view>

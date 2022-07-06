@@ -9,8 +9,16 @@
     "pages/warehouse/index",
     "pages/writeaddress/index",
     "pages/notice/index",
-    "pages/country/index"
-  ],
+    "pages/country/index",
+    "pages/useraddress/index",
+    "pages/address/index",
+    "pages/Storageaddress/index",
+    "pages/activeCenter/index",
+    "pages/TransferProcess/index",
+    "pages/TransferInstructions/index",
+    "pages/Preferentials/index",
+    "pages/orderDetails/index"
+    ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#4c168e",
@@ -33,19 +41,19 @@
         "pagePath": "pages/Preferential/index",
         "text": "优惠卷",
         "iconPath": "icons/preferential.png",
-        "selectedIconPath": ""
+        "selectedIconPath": "icons/preferential.png"
       },
       {
         "pagePath": "pages/order/index",
         "text": "订单信息",
         "iconPath": "icons/information.png",
-        "selectedIconPath": ""
+        "selectedIconPath": "icons/information.png"
       },
       {
         "pagePath": "pages/user/index",
         "text": "我的",
         "iconPath": "icons/me.png",
-        "selectedIconPath": ""
+        "selectedIconPath": "icons/me.png"
       }
     ]
   },

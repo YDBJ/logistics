@@ -1,11 +1,11 @@
-// pages/auth/index.ts
+// pages/Storageaddress/index.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    checked: true,
   },
 
   /**
@@ -13,6 +13,12 @@ Page({
    */
   onLoad() {
 
+  },
+
+  onChange(event:any) {
+    this.setData({
+      checked: event.detail,
+    });
   },
 
   /**

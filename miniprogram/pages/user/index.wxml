@@ -1,1 +1,62 @@
-123a
+<view class="page">
+  <view class="user_info_wrap">
+    <view class="user_img_wrap">
+      <image class="user_bg" src="{{avatarUrl}}"></image>
+      <view class="user_info">
+        <image class="user_icon" src="{{avatarUrl}}"></image>
+        <view class="user_name">
+          <view class="name">{{nickName}}</view>
+          <view class="writer">编码：{{nickName}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 我的订单 -->
+  <view class="orders_wrap">
+    <view class="orders_title">
+      我的订单
+      <view class="all_title">
+        <text>全部订单</text>
+        <image class="iconfont" src="../../icons/strongright.png"></image>
+      </view>
+    </view>
+    <view class="order_content">
+      <navigator url="/pages/order/index?type=1">
+        <image class="iconfont" src="../../icons/wait.png"></image>
+        <image class="measure" src="../../icons/measure.png"></image>
+        <view class="order_name">待付款</view>
+      </navigator>
+      <navigator url="/pages/order/index?type=2">
+        <image class="iconfont" src="../../icons/delivery.png"></image>
+        <image class="measure" src="../../icons/measure.png"></image>
+        <view class="order_name">待发货</view>
+      </navigator>
+      <navigator url="/pages/order/index?type=3">
+        <image class="iconfont" src="../../icons/dueIn.png"></image>
+        <image class="measure" src="../../icons/measure.png"></image>
+        <view class="order_name">待收货</view>
+      </navigator>
+      <navigator>
+        <image class="iconfont" src="../../icons/appraise.png"></image>
+        <image class="measure" src="../../icons/measure.png"></image>
+        <view class="order_name">待评价</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="cell">
+    <van-cell-group>
+      <van-cell title="我的地址" is-link />
+      <van-cell title="我的优惠卷" is-link />
+      <van-cell title="活动中心" is-link />
+      <van-cell title="联系客服" is-link />
+      <van-cell title="转运流程" is-link />
+      <van-cell title="转运须知" is-link />
+      <van-cell title="关于我们" is-link />
+    </van-cell-group>
+    <view class="goInButton">
+      <button class='btn' bindtap="handletap">
+        <view>退出登录</view>
+      </button>
+    </view>
+  </view>
+</view>

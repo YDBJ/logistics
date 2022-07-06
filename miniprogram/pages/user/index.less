@@ -1,1 +1,131 @@
-/* pages/search/index.wxss */
+.page {
+  background-color: #edece8;
+
+  .user_info_wrap {
+    height: 30vh;
+    overflow: hidden;
+    background-color: rgb(204, 204, 204);
+    position: relative;
+
+    .user_img_wrap {
+      position: absolute;
+      top: -2px;
+
+      .user_bg {
+        height: 33vh;
+        width: 100vw;
+        // 高斯模糊
+        filter: blur(10rpx);
+      }
+
+      .user_info {
+        position: absolute;
+        top: 23%;
+        left: 6%;
+      }
+
+      .user_icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+      }
+
+      .user_name {
+        position: absolute;
+        top: -25%;
+        left: 100px;
+        color: rgb(255, 255, 255);
+        margin-top: 40rpx;
+        font-size: 24px;
+
+        view {
+          padding: 4px;
+        }
+
+        .writer {
+          width: 100px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .orders_wrap {
+    background-color: #fff;
+    width: 360px;
+    height: 132px;
+    margin-top: 30rpx;
+    margin-left: 8px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+
+    .orders_title {
+      position: relative;
+      padding: 20rpx;
+      font-size: 14px;
+
+      .all_title {
+        position: absolute;
+        top: 10px;
+        left: 270px;
+        color: rgba(153, 153, 153, 100);
+
+        .iconfont {
+          position: absolute;
+          top: -1px;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+
+
+    .order_content {
+      display: flex;
+
+      navigator {
+        padding: 30rpx 0;
+        flex: 1;
+        text-align: center;
+
+        .iconfont {
+          width: 27px;
+          height: 28px;
+        }
+
+        .measure {
+          position: relative;
+          top: -20px;
+          width: 11px;
+          height: 11px;
+        }
+
+        .order_name {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .cell {
+    margin: 14px auto;
+    width: 360px;
+    height: 301px;
+    background-color: rgba(255, 255, 255, 100);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+  }
+
+  .goInButton {
+
+    .btn {
+      margin-top: 10px;
+      background-color: #4e148c;
+      color: white;
+      border-radius: 6px;
+      line-height: 40px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
-  <view class="onlyone" wx:for="{{orders}}" wx:key="order_id">
+  <view class="onlyone" wx:for="{{arrs}}" wx:key="order_id">
     <view class="orderNumber">订单号：{{item.order_number}} <text class="copy">复制</text></view>
     <view class="goInText">
       <text>{{item.start}}</text>
